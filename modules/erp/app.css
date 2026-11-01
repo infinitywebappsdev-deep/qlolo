@@ -1,0 +1,107 @@
+/* ERP admin theme styles */
+
+#erp-dashboard {
+  .erp-nav {
+    margin-bottom: 0;
+  }
+  .erp-nav .nav-link {
+    color: #555;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: 10px 14px;
+    font-weight: 500;
+    transition: background 0.15s, color 0.15s, border 0.15s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .erp-nav .nav-link i {
+    min-width: 18px;
+  }
+  .erp-nav .nav-link:hover {
+    background: #f6f6f6;
+    color: #1a1a2e;
+  }
+  .erp-nav .nav-link.active {
+    background: #1a1a2e;
+    color: #fff;
+    border-color: #1a1a2e;
+  }
+
+  .erp-content {
+    margin-top: 16px;
+  }
+
+  .erp-section {
+    margin-bottom: 18px;
+  }
+
+  .erp-panel .panel-heading {
+    border-radius: 5px;
+    border: solid 1px #d7d7d7;
+    background-color: #ffffff;
+    padding: 18px;
+  }
+
+  .erp-kpi .kpi-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .erp-kpi .kpi-change {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .erp-kpi .kpi-change.up {
+    color: #22c55e;
+  }
+  .erp-kpi .kpi-change.down {
+    color: #ef4444;
+  }
+
+  .erp-scroll {
+    max-height: 420px;
+    overflow-y: auto;
+    padding-right: 4px;
+  }
+
+  .erp-status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .erp-status-ok { background: #dcfce7; color: #166534; }
+  .erp-status-warning { background: #fef3c7; color: #92400e; }
+  .erp-status-critical { background: #fee2e2; color: #991b1b; }
+  .erp-status-pending { background: #e0e7ff; color: #3730a3; }
+  .erp-status-done { background: #d1fae5; color: #065f46; }
+
+  .erp-grid-rooms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .erp-room-card {
+    border: solid 1px #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    background: #fafafa;
+  }
+  .erp-room-card .room-title {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .erp-room-card .room-meta {
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+}
+
+@media (max-width: 768px) {
+  #erp-dashboard .erp-nav .nav-link {
+    padding: 8px 10px;
+  }
+}
